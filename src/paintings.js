@@ -1,3 +1,5 @@
+import uniqid from 'uniqid';
+
 import CreationOfAdam from './assets/Paintings/CreationOfAdam_Michelangelo.jpg';
 import GirlWithAPearl from './assets/Paintings/GirlWithAPearl_JohannesVermeer.jpg';
 import Guernica from './assets/Paintings/Guernica_Picasso.jpg';
@@ -14,6 +16,7 @@ class Painting {
     this.image = image;
     this.title = title;
     this.author = author;
+    this.id = uniqid();
   }
 }
 
