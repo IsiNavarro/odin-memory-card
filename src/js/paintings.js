@@ -38,3 +38,11 @@ const paintings = [
 ];
 
 export default paintings;
+
+// Display cards (how many?)
+//    Choose random from paintings --> deck class
+//    Shuffle them ---> deck.shuffle()
+//    Display ---> deck.display()
+// Choose one >>> GameController class
+//    Keep track of clicked paintings in an array ---> GameController.tracked
+//    ClickedInTracked ? gameOver() : handleGoodChoice(); >>> addToTrack() updateStore() checkMaxScore() playRound();
