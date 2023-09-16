@@ -24,7 +24,7 @@ const paintings = [
   new Painting(CreationOfAdam, 'Creation of Adam', 'Michelangelo'),
   new Painting(GirlWithAPearl, 'Girl with a Pearl Earring', 'Johannes Vermeer'),
   new Painting(Guernica, 'Guernica', 'Pablo Picasso'),
-  new Painting(LesDemoiselles, "Les Domoiselles d'Avignon", 'Pablo Picasso'),
+  new Painting(LesDemoiselles, "Les Demoiselles d'Avignon", 'Pablo Picasso'),
   new Painting(LaGioconda, 'La Gioconda', 'Leonardo da Vinci'),
   new Painting(BirthOfVenus, 'The Birth of Venus', 'Sandro Botticelli'),
   new Painting(LastSupper, 'The Last Supper', 'Leonardo da Vinci'),

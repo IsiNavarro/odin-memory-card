@@ -31,6 +31,6 @@ class Deck {
   }
 }
 
-const sampleDeck = new Deck(7);
+const sampleDeck = new Deck(10);
 
 export default sampleDeck;
