@@ -1,12 +1,14 @@
 import { useState } from 'react';
 
-import sampleDeck from './js/Deck';
+import Deck from './js/Deck';
 import GameController from './js/GameController';
 
 import GameOn from './components/gameOn/GameOn';
 
+GameController.deck = new Deck(5);
+
 function App() {
-  const [cards, setCards] = useState(sampleDeck.cards);
+  const [cards, setCards] = useState(GameController.deck.cards);
   const [score, setScore] = useState(GameController.score);
   const [bestScore, setBestScore] = useState(GameController.bestScore);
   const [gameState, setGameState] = useState(GameController.gameState);
@@ -18,7 +20,7 @@ function App() {
     setGameState(GameController.gameState);
     setScore(GameController.score);
     setBestScore(GameController.bestScore);
-    setCards((prevCards) => sampleDeck.shuffleCards([...prevCards]));
+    setCards((prevCards) => GameController.deck.shuffleCards([...prevCards]));
   };
 
   return (
