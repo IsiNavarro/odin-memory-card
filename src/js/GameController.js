@@ -2,7 +2,7 @@ const GameControler = new (class GameController {
   constructor(deck) {
     this.score = 0;
     this.bestScore = 0;
-    this.gameState = 'on'; //'home', 'over'
+    this.gameState = 'on'; //'home', 'over', 'win'
     this.choices = [];
     this.deck = deck;
   }
@@ -19,10 +19,16 @@ const GameControler = new (class GameController {
 
       //Add choice to choices
       this.choices.push(choice);
+
+      //Check for a win
+      if (this.choices.length === this.deck.cards.length) this.win();
     }
   }
   gameOver() {
     this.gameState = 'over';
+  }
+  win() {
+    this.gameState = 'win';
   }
 })();
 

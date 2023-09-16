@@ -3,9 +3,12 @@ import { useState } from 'react';
 import Deck from './js/Deck';
 import GameController from './js/GameController';
 
+import Home from './components/Home/Home';
 import GameOn from './components/gameOn/GameOn';
+import GameOver from './components/gameOver/GameOver';
+import Win from './components/win/Win';
 
-GameController.deck = new Deck(5);
+GameController.deck = new Deck(2);
 
 function App() {
   const [cards, setCards] = useState(GameController.deck.cards);
@@ -25,14 +28,21 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      {gameState === 'on' && (
-        <GameOn
-          cards={cards}
-          handleCardClick={handleCardClick}
-          score={score}
-          bestScore={bestScore}
-        />
-      )}
+      {
+        {
+          home: <Home />,
+          on: (
+            <GameOn
+              cards={cards}
+              handleCardClick={handleCardClick}
+              score={score}
+              bestScore={bestScore}
+            />
+          ),
+          over: <GameOver />,
+          win: <Win />,
+        }[gameState]
+      }
     </div>
   );
 }
