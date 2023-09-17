@@ -4,7 +4,7 @@ const GameControler = new (class GameController {
   constructor() {
     this.score = 0;
     this.bestScore = 0;
-    this.gameState = 'on'; //'home', 'over', 'win'
+    this.gameState = 'home'; //'home', 'over', 'win'
     this.choices = [];
     this.deck = new Deck(10);
   }
@@ -33,10 +33,13 @@ const GameControler = new (class GameController {
     this.score = 0;
     this.choices = [];
 
-    this.gameState = 'on';
+    this.gameOn();
   }
   goHome() {
     this.gameState = 'home';
+  }
+  gameOn() {
+    this.gameState = 'on';
   }
   gameOver() {
     this.gameState = 'over';

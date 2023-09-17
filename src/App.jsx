@@ -34,6 +34,15 @@ function App() {
     setCards((prevCards) => GameController.deck.shuffleCards([...prevCards]));
   };
 
+  const handleDifficulty = (e) => {
+    const dif = parseInt(e.target.id);
+    GameController.setDifficulty(dif);
+    setCards(GameController.deck.cards);
+
+    GameController.playAgain();
+    setGameState(GameController.gameState);
+  };
+
   const goHome = () => {
     GameController.goHome();
 
@@ -48,7 +57,7 @@ function App() {
       <div className="bg-slate-300">
         {
           {
-            home: <Home />,
+            home: <Home handleDifficulty={handleDifficulty} />,
             on: (
               <GameOn
                 cards={cards}

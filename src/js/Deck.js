@@ -7,7 +7,7 @@ class Deck {
   }
 
   chooseRandomCards(numberOfCards) {
-    const paintingsCopy = this.paintings;
+    const paintingsCopy = [...this.paintings];
 
     //Get out numberOfCards from copy
     for (let i = 0; i < 10 - numberOfCards; i++) {
