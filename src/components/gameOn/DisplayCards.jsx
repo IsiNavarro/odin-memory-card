@@ -5,7 +5,7 @@ const Card = ({ id, title, author, image, handleCardClick }) => {
     <div className="flex flex-col items-center max-w-[250px] gap-2">
       <button
         onClick={handleCardClick}
-        className="max-w-[300px] xl:max-w-[200px] shadow-xl shadow-slate-400"
+        className="max-w-[300px] xl:max-w-[190px] shadow-xl shadow-slate-400"
       >
         <img
           id={id}

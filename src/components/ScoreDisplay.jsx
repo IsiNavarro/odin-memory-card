@@ -2,7 +2,7 @@ import React from 'react';
 
 const ScoreDisplay = ({ score, bestScore }) => {
   return (
-    <div className="bg-white py-2 px-4 rounded-sm">
+    <div className="bg-white py-1 px-4 rounded-sm">
       <div className="text-xl font-bold text-slate-800">
         {'Right choices: '}
         <span className="text-slate-700">{score}</span>
