@@ -66,7 +66,14 @@ function App() {
                 goHome={goHome}
               />
             ),
-            win: <Win />,
+            win: (
+              <Win
+                score={score}
+                bestScore={bestScore}
+                handlePlayAgain={handlePlayAgain}
+                goHome={goHome}
+              />
+            ),
           }[gameState]
         }
       </div>

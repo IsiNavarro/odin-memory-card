@@ -4,10 +4,10 @@ import ScoreDisplay from '../ScoreDisplay';
 
 const GameOn = ({ cards, handleCardClick, score, bestScore }) => {
   return (
-    <div className="flex flex-col gap-6 items-center justify-center">
+    <section className="flex flex-col gap-6 items-center justify-center">
       <ScoreDisplay score={score} bestScore={bestScore} />
       <DisplayCards cards={cards} handleCardClick={handleCardClick} />
-    </div>
+    </section>
   );
 };
 
