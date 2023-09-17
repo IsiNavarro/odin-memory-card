@@ -1,6 +1,6 @@
 import React from 'react';
 import DisplayCards from './DisplayCards';
-import ScoreDisplay from './ScoreDisplay';
+import ScoreDisplay from '../ScoreDisplay';
 
 const GameOn = ({ cards, handleCardClick, score, bestScore }) => {
   return (
