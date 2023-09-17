@@ -40,6 +40,8 @@ function App() {
     setCards(GameController.deck.cards);
 
     GameController.playAgain();
+    setScore(GameController.score);
+    setBestScore(GameController.bestScore);
     setGameState(GameController.gameState);
   };
 
