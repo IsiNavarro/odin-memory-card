@@ -4,7 +4,7 @@
 
 <h2>🚀 Live Demo</h2>
 
-[https://isinavarro-odin-cv-app.netlify.app/](https://isinavarro-odin-cv-app.netlify.app/)
+[https://isinavarro-odin-memory-app.netlify.app/](https://isinavarro-odin-memory-app.netlify.app/)
 
 <h2>Project Screenshots:</h2>
 
